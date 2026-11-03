@@ -1,0 +1,26 @@
+[project]
+name = "ucv-sistemas-lab8"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jimmy Chamorro Ayala",email = "TU_CORREO@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-adk (>=2.13.0,<3.0.0)",
+    "python-dotenv (>=1.2.4,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.2.0,<10.0.0)"
+]
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
